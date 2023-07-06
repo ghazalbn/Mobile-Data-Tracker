@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Data Tracker</string>
+
+    <string name="month_usage">جدول استفاده این ماه</string>
+    <string name="usage">مصرف</string>
+    <string name="last_30_days">30 روز اخیر</string>
+</resources>
