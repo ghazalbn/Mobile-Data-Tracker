@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <color name="surface">@color/grey_600</color>
-    <color name="text">@color/white</color>
-    <color name="sub_text">@color/grey_300</color>
-    <color name="inverse_text">@color/black</color>
-
-</resources>
