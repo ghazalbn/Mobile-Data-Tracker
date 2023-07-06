@@ -1,10 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="surface">@color/white</color>
+    <color name="text">@color/black</color>
+    <color name="inverse_text">@color/white</color>
+    <color name="sub_text">@color/grey_500</color>
+
+    <!-- |||||||||||||||| New Pallet Colors |||||||||||||||| -->
+    <color name="orange_100">#FFFE981A</color>
+    <color name="orange_200">#FFF27C22</color>
+    <color name="orange_300">#FFF77534</color>
+    <color name="orange_400">#FFED6526</color>
+    <color name="orange_900">#612201</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_400">#AB47BC</color>
+    <color name="purple_500">#FF660099</color>
+
+    <color name="blue_200">#FF56B7FC</color>
+    <color name="blue_300">#FF3299FC</color>
+    <color name="blue_400">#FF207CE6</color>
+    <color name="blue_500">#FF1B529E</color>
+
+    <color name="grey_100">#FFFAFAFA</color>
+    <color name="grey_200">#FFD7D7D9</color>
+    <color name="grey_300">#FFA6A7AB</color>
+    <color name="grey_400">#FF777A80</color>
+    <color name="grey_500">#FF676A70</color>
+    <color name="grey_600">#FF383838</color>
+    <color name="grey_650">#FF242424</color>
+    <color name="grey_700">#FF191E29</color>
+
+    <color name="red_100">#FF6565</color>
+    <color name="red_200">#FFFC0729</color>
+    <color name="red_300">#FFCC1017</color>
+
 </resources>

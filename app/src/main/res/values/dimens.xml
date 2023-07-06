@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  size Dimens  -->
+    <dimen name="size_4xs">1dp</dimen>
+    <dimen name="size_3xs">2dp</dimen>
+    <dimen name="size_2xs">4dp</dimen>
+    <dimen name="size_xs">6dp</dimen>
+    <dimen name="size_s">8dp</dimen>
+    <dimen name="size_m">10dp</dimen>
+    <dimen name="size_l">12dp</dimen>
+    <dimen name="size_xl">14dp</dimen>
+    <dimen name="size_2xl">16dp</dimen>
+    <dimen name="size_3xl">18dp</dimen>
+    <dimen name="size_4xl">20dp</dimen>
+    <dimen name="size_5xl">24dp</dimen>
+    <dimen name="size_6xl">28dp</dimen>
+    <dimen name="size_7xl">32dp</dimen>
+
+    <!--  text Dimens  -->
+    <dimen name="text_2s">10sp</dimen>
+    <dimen name="text_s">12sp</dimen>
+    <dimen name="text_m">14sp</dimen>
+    <dimen name="text_l">16sp</dimen>
+    <dimen name="text_xl">18sp</dimen>
+    <dimen name="text_2xl">22sp</dimen>
+
+    <!--  special Dimens  -->
+    <dimen name="default_radius">@dimen/size_xl</dimen>
+    <dimen name="default_margin">@dimen/size_l</dimen>
+    <dimen name="default_padding">@dimen/size_m</dimen>
+
+</resources>
