@@ -15,14 +15,14 @@ object ProfilePreferences {
     private const val notificationKey: String = "notification"
 
     //limit
-    fun setLimit(limit: Int) {
+    fun setLimit(limit: Long) {
         val editor: SharedPreferences.Editor = sharedPreference.edit()
-        editor.putInt(limitKey, limit)
+        editor.putLong(limitKey, limit)
         editor.apply()
     }
 
-    fun getLimit(): Int {
-        return sharedPreference.getInt(limitKey, 2 * 1024 * 1024 * 1024 )
+    fun getLimit(): Long {
+        return sharedPreference.getLong(limitKey, 2147483648L )
     }
 
     //notification

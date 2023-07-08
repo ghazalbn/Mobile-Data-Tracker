@@ -18,7 +18,7 @@ class SetLimitActivity : AppCompatActivity() {
 
         binding.submitButton.setOnClickListener {
             if (!binding.editText.text.toString().isNullOrEmpty()){
-                ProfilePreferences.setLimit(binding.editText.text.toString().toInt() * 1024 * 1024)
+                ProfilePreferences.setLimit(binding.editText.text.toString().toLong() * 1024 * 1024)
                 ProfilePreferences.setNotification(false)
                 finish()
             }
