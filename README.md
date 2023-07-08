@@ -17,7 +17,8 @@ To use the Data Tracker app, follow these steps:
 
 1. Clone the repository.
 2. Open the project in Android Studio.
-3. Build and run the app on an Android device or emulator.
+3. Sync the project with the Gradle files.
+4. Build and run the app on an Android device or emulator.
 
 ## Usage
 
@@ -52,6 +53,22 @@ The Data Tracker app requires the following permissions:
 - `android.permission.FOREGROUND_SERVICE`: Enables the app to run foreground services.
 - `android.permission.RECEIVE_BOOT_COMPLETED`: Grants the app the ability to receive the BOOT_COMPLETED broadcast after the device boots up.
 
+## Dependencies
+
+The Data Tracker app relies on the following dependencies:
+
+- androidx.core:core-ktx:1.8.0
+- org.jetbrains.kotlin:kotlin-bom:1.8.0
+- androidx.lifecycle:lifecycle-runtime-ktx:2.3.1
+- androidx.appcompat:appcompat:1.6.1
+- androidx.constraintlayout:constraintlayout:2.1.4
+- junit:junit:4.13.2
+- androidx.test.ext:junit:1.1.5
+- androidx.test.espresso:espresso-core:3.5.1
+- com.github.JahidHasanCO:NetworkUsage:1.0.1
+- com.google.android.material:material:1.9.0
+- com.github.PhilJay:MPAndroidChart:v3.1.0
+
 ## Implementation
 
 The Data Tracker app is implemented using Kotlin and follows the Model-View-ViewModel (MVVM) architecture. It utilizes various Android components and libraries, including:
@@ -64,17 +81,32 @@ The Data Tracker app is implemented using Kotlin and follows the Model-View-View
 
 The app makes use of a `NetworkMonitorService` to monitor internet usage in the background and a `ProfilePreferences` object to store and retrieve user preferences.
 
-## Files Explanation
+## Project Structure
 
-The Data Tracker app consists of the following files:
+The Data Tracker project follows the standard Android project structure. The main components and files include:
+
+- `app/src/main/java/com/firstapp/datatracker/`: Contains the Java/Kotlin source files.
+- `app/src/main/res/`: Contains the resources such as layouts, drawables, and strings.
+- `app/src/main/AndroidManifest.xml`: Specifies the app's package name, permissions, and activities.
+- `app/build.gradle`: Includes the app-level dependencies and configuration.
+
+## Important Files and Components
+
+The project consists of the following key files:
+
+- **DataModel.kt**: Create the DataModel data class to represent the data structure for storing mobile data usage information. This class will have properties for mobile data usage and date.
 
 - **MainActivity.kt**: This file contains the implementation of the main screen of the app. It handles the UI interactions and displays the various sections, including daily data usage, monthly data usages, and buttons for setting the limit and viewing the graph.
+
+- **DataAdapter.kt**: Implement the DataAdapter class, which extends RecyclerView.Adapter, to bind the data from the DataModel to the UI elements in the RecyclerView. This adapter will inflate the item layout and bind the data to the corresponding views.
 
 - **SetLimitActivity.kt**: This file implements the activity for setting the data usage limit. It provides an input field for users to enter their desired limit and handles the submission of the limit.
 
 - **NetworkMonitorService.kt**: This file includes the implementation of a background service that monitors internet usage. It periodically checks the data usage and sends notifications if the limit is exceeded.
 
 - **ProfilePreferences.kt**: This file defines a shared preferences object for storing user preferences, such as the data usage limit and notification settings.
+
+- **ChartActivity.kt**: Implements the ChartActivity class, which displays a bar chart representing the mobile data usage for the last 30 days. It uses the NetworkUsageManager to retrieve the usage data, prepares the data for the chart, and uses the MPAndroidChart library to create and customize the bar chart.
 
 - **activity_chart.xml**: This XML layout file defines the layout for the activity that displays the graphical representation of data usage.
 
