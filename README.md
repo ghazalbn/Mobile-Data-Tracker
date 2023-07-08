@@ -40,6 +40,18 @@ The Data Tracker app utilizes the following libraries:
 - `dev.jahidhasanco.networkusage`: A library for tracking network usage statistics.
 - `com.github.PhilJay:MPAndroidChart`: A powerful charting library for Android.
 
+## Permissions
+
+The Data Tracker app requires the following permissions:
+
+- `android.permission.POST_NOTIFICATIONS`: Allows the app to post notifications.
+- `android.permission.READ_PHONE_STATE`: Grants access to read phone state information.
+- `android.permission.PACKAGE_USAGE_STATS`: Requests access to package usage statistics.
+- `android.permission.READ_PRIVILEGED_PHONE_STATE`: Provides privileged access to read phone state information.
+- `android.permission.ACCESS_NETWORK_STATE`: Allows the app to access information about network connectivity.
+- `android.permission.FOREGROUND_SERVICE`: Enables the app to run foreground services.
+- `android.permission.RECEIVE_BOOT_COMPLETED`: Grants the app the ability to receive the BOOT_COMPLETED broadcast after the device boots up.
+
 ## Implementation
 
 The Data Tracker app is implemented using Kotlin and follows the Model-View-ViewModel (MVVM) architecture. It utilizes various Android components and libraries, including:
@@ -71,8 +83,6 @@ The Data Tracker app consists of the following files:
 - **activity_set_limit.xml**: This XML layout file defines the layout for the activity that allows users to set the data usage limit.
 
 - **item_data_usage.xml**: This XML layout file defines the layout for each item in the list of monthly data usages.
-
-Please note that this is a general explanation of the files in your project. You can provide more detailed explanations and descriptions based on your specific implementation.
 
 
 ## Contributing
