@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var dataUsagesAdapter: DataAdapter
     private var usagesDataList = ArrayList<DataModel>()
     private lateinit var networkUsage: NetworkUsageManager
+    private var message = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.dataUsagesTv.setOnClickListener {
-            Toast.makeText(this, "مقایسه مصرف امروز با مصرف میانگین 30 روز اخیر", Toast.LENGTH_LONG)
+            Toast.makeText(this, message, Toast.LENGTH_LONG)
                 .show()
         }
 
@@ -81,12 +82,15 @@ class MainActivity : AppCompatActivity() {
                 when {
                     percentage < -threshold -> {
                         binding.dataUsagesTv.setTextColor(Color.parseColor("#00FF00"))
+                        message = "مصرف دیتای کم: کم تر از میانگین 30 روز اخیر"
                     }
                     percentage > threshold -> {
                         binding.dataUsagesTv.setTextColor(Color.parseColor("#FC0729"))
+                        message = "مصرف دیتای بالا: بیشتر از میانگین 30 روز اخیر"
                     }
                     else -> {
                         binding.dataUsagesTv.setTextColor(Color.parseColor("#FE981A"))
+                        message = "مصرف دیتای متوسط: در حد میانگین 30 روز اخیر"
                     }
                 }
 
