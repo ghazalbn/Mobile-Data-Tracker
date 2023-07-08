@@ -30,8 +30,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        ProfilePreferences.init(this)
 
         setupPermissions()
+
+        startService(Intent(this, NetworkMonitorService::class.java))
 
         val networkUsage = NetworkUsageManager(this, Util.getSubscriberId(this))
 
