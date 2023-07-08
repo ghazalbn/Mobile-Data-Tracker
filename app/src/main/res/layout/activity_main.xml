@@ -3,38 +3,98 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <data>
-
-    </data>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/surface"
         tools:context=".MainActivity">
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="@dimen/size_4xs"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/surface">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layoutDirection="ltr">
+
+                    <ImageView
+                        android:id="@+id/graphButton"
+                        style="@style/clickableFocusable.Padding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="@dimen/size_2xs"
+                        android:src="@drawable/ic_graph"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/titleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="@dimen/size_l"
+                        android:layout_marginEnd="@dimen/size_l"
+                        android:fontFamily="@font/iran_sans_regular"
+                        android:gravity="center_vertical|center"
+                        android:paddingStart="@dimen/size_s"
+                        android:paddingEnd="@dimen/size_s"
+                        android:text="Data Tracker"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/text_xl"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/limitButton"
+                        style="@style/clickableFocusable.Padding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="@dimen/size_2xs"
+                        android:src="@drawable/ic_meter"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </androidx.cardview.widget.CardView>
+
         <androidx.core.widget.NestedScrollView
             android:id="@+id/nestedScrollView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/size_4xl"
-                    android:layout_marginTop="@dimen/size_4xl"
+                    android:layout_marginTop="@dimen/default_margin"
                     android:layout_marginEnd="@dimen/size_4xl"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:gravity="center">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -45,51 +105,83 @@
                             android:id="@+id/dataUsagesTv"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/default_margin"
+                            android:fontFamily="@font/iran_sans_regular"
                             android:gravity="center_vertical"
                             android:maxLines="1"
-                            android:text="Data: 0 Kib"
                             android:textColor="@color/purple_500"
                             android:textSize="@dimen/text_l"
+                            android:textStyle="bold"
+                            tools:text="12.07 MB"
+                            android:drawablePadding="@dimen/size_3xs"
+                            style="@style/clickableFocusable"
+                            android:drawableLeft="@drawable/ic_info"/>
+
+                        <TextView
+                            android:id="@+id/dataUsagesTitleTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
                             android:fontFamily="@font/iran_sans_regular"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:text="مصرف داده موبایل امروز:"
+                            android:textColor="@color/purple_500"
+                            android:textSize="@dimen/text_l"
                             android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <TextView
-                        android:id="@+id/downUsagesTv"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:gravity="center_vertical"
-                        style="@style/text.normal" />
+                        android:id="@+id/upUsagesTv"
+                        style="@style/text.normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="12kbs"
+                        android:layout_marginTop="@dimen/size_2xs"
+                        android:drawablePadding="@dimen/size_4xs"
+                        android:drawableRight="@drawable/ic_up_arrow"
+                        android:gravity="center_vertical" />
 
                     <TextView
-                        android:id="@+id/upUsagesTv"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:gravity="center_vertical"
-                        style="@style/text.normal" />
+                        android:id="@+id/downUsagesTv"
+                        style="@style/text.normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="12kbs"
+                        android:drawablePadding="@dimen/size_4xs"
+                        android:drawableRight="@drawable/ic_down_arrow"
+                        android:gravity="center_vertical" />
+
 
                 </LinearLayout>
 
-
                 <TextView
+                    style="@style/text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/size_4xl"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/default_margin"
                     android:layout_marginEnd="@dimen/size_4xl"
-                    android:text="@string/month_usage"
-                    style="@style/text.normal" />
+                    android:text="@string/month_usage" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/size_4xl"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/size_2xs"
                     android:layout_marginEnd="@dimen/size_4xl"
                     android:layout_marginBottom="2dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/grey_200"
+                        android:fontFamily="@font/iran_sans_regular"
+                        android:maxEms="20"
+                        android:padding="5dp"
+                        android:text="@string/usage"
+                        android:textColor="@color/black" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -97,23 +189,11 @@
                         android:layout_marginStart="2dp"
                         android:layout_weight="1"
                         android:background="@color/purple_400"
+                        android:fontFamily="@font/iran_sans_regular"
                         android:maxEms="20"
                         android:padding="5dp"
                         android:text="تاریخ"
-                        android:fontFamily="@font/iran_sans_regular"
                         android:textColor="@color/white" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@color/grey_200"
-                        android:maxEms="20"
-                        android:padding="5dp"
-                        android:text="@string/mobile"
-                        android:fontFamily="@font/iran_sans_regular"
-                        android:textColor="@color/black"/>
-
 
                 </LinearLayout>
 
@@ -124,7 +204,6 @@
                     android:layout_marginStart="@dimen/size_4xl"
                     android:layout_marginEnd="@dimen/size_4xl"
                     tools:listitem="@layout/item_data_usage" />
-
 
             </LinearLayout>
 
@@ -141,17 +220,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="2dp"
-                android:layout_weight="1"
-                android:background="@color/purple_400"
-                android:maxEms="20"
-                android:padding="5dp"
-                android:text="@string/last_30_days"
-                android:fontFamily="@font/iran_sans_regular"
-                android:textColor="@color/white" />
 
             <TextView
                 android:id="@+id/mobile_data_this_month"
@@ -162,18 +230,19 @@
                 android:background="@color/surface"
                 android:maxEms="20"
                 android:padding="5dp"
-                android:textColor="@color/black" />
+                android:textColor="@color/text" />
 
-            <!--            <TextView-->
-            <!--                android:id="@+id/wifi_data_this_month"-->
-            <!--                android:layout_width="0dp"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_margin="2dp"-->
-            <!--                android:layout_weight="1"-->
-            <!--                android:background="@color/surface"-->
-            <!--                android:maxEms="20"-->
-            <!--                android:padding="5dp"-->
-            <!--                android:textColor="@color/black" />-->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@color/purple_400"
+                android:fontFamily="@font/iran_sans_regular"
+                android:maxEms="20"
+                android:padding="5dp"
+                android:text="@string/last_30_days"
+                android:textColor="@color/white" />
 
         </LinearLayout>
 
