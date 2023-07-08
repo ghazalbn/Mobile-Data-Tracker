@@ -31,7 +31,7 @@ Upon launching the app, you will see the main screen with the following options:
 
 ## Screenshots
 
-Insert screenshots of your app here to showcase its features and user interface.
+screenshots
 
 ## Libraries Used
 
@@ -51,6 +51,29 @@ The Data Tracker app is implemented using Kotlin and follows the Model-View-View
 - SharedPreferences: Used for storing user preferences, such as the data usage limit and notification settings.
 
 The app makes use of a `NetworkMonitorService` to monitor internet usage in the background and a `ProfilePreferences` object to store and retrieve user preferences.
+
+## Files Explanation
+
+The Data Tracker app consists of the following files:
+
+- **MainActivity.kt**: This file contains the implementation of the main screen of the app. It handles the UI interactions and displays the various sections, including daily data usage, monthly data usages, and buttons for setting the limit and viewing the graph.
+
+- **SetLimitActivity.kt**: This file implements the activity for setting the data usage limit. It provides an input field for users to enter their desired limit and handles the submission of the limit.
+
+- **NetworkMonitorService.kt**: This file includes the implementation of a background service that monitors internet usage. It periodically checks the data usage and sends notifications if the limit is exceeded.
+
+- **ProfilePreferences.kt**: This file defines a shared preferences object for storing user preferences, such as the data usage limit and notification settings.
+
+- **activity_chart.xml**: This XML layout file defines the layout for the activity that displays the graphical representation of data usage.
+
+- **activity_main.xml**: This XML layout file defines the layout for the main screen of the app, including the sections for daily data usage and monthly data usages.
+
+- **activity_set_limit.xml**: This XML layout file defines the layout for the activity that allows users to set the data usage limit.
+
+- **item_data_usage.xml**: This XML layout file defines the layout for each item in the list of monthly data usages.
+
+Please note that this is a general explanation of the files in your project. You can provide more detailed explanations and descriptions based on your specific implementation.
+
 
 ## Contributing
 
