@@ -1,2 +1,65 @@
-# Mobile-Data-Tracker
-An Android app that monitors mobile network traffc and provides users with insights into their data usage patterns.
+# Mobile-Data-Tracker App
+
+Data Tracker is an Android application that helps you monitor and track your mobile data usage and provides users with insights into their data usage patterns. With this app, you can set limits for your data usage, view your daily and monthly usage, View the graphical representation of your data usage pattern. and receive notifications when you reach your set limit.
+
+## Features
+
+- Usage tracking: Monitor and track your daily and monthly mobile data usage.
+- Set data usage limit: Set a limit for your daily mobile data usage.
+- Notifications: Receive notifications when you reach your set data usage limit.
+- Data usage history: View your data usage history for the past 30 days.
+- Graphical representation: Visualize your data usage with charts and graphs.
+- Analyze data consumation: compare the daily data consumption with the average data consumed in the last 30 days, providing users with insights into their usage habits.
+
+## Installation
+
+To use the Data Tracker app, follow these steps:
+
+1. Clone the repository.
+2. Open the project in Android Studio.
+3. Build and run the app on an Android device or emulator.
+
+## Usage
+
+Upon launching the app, you will see the main screen with the following options:
+
+- **Set Limit**: Tap the upper left button to set your data usage limit for the day.
+- **Graph**: Tap the upper right button to view a graphical representation of your data usage.
+- **Data Usages**: This section displays your current daily data usage, including upload and download speeds.
+- **Monthly Data Usages**: This section shows a list of your data usage history for the past 30 days.
+- **Analize Data Usage**: Tap on the today's data usage to see your data analysis for the day.
+
+## Screenshots
+
+Insert screenshots of your app here to showcase its features and user interface.
+
+## Libraries Used
+
+The Data Tracker app utilizes the following libraries:
+
+- `dev.jahidhasanco.networkusage`: A library for tracking network usage statistics.
+- `com.github.PhilJay:MPAndroidChart`: A powerful charting library for Android.
+
+## Implementation
+
+The Data Tracker app is implemented using Kotlin and follows the Model-View-ViewModel (MVVM) architecture. It utilizes various Android components and libraries, including:
+
+- Android Architecture Components: LiveData, ViewModel, and Room Database.
+- Android Data Binding: Used for binding UI components to data.
+- RecyclerView: Used for displaying the list of monthly data usages.
+- MPAndroidChart: Used for displaying the bar chart representing the data usage for the past 7 days.
+- SharedPreferences: Used for storing user preferences, such as the data usage limit and notification settings.
+
+The app makes use of a `NetworkMonitorService` to monitor internet usage in the background and a `ProfilePreferences` object to store and retrieve user preferences.
+
+## Contributing
+
+Contributions to the Data Tracker app are welcome! If you encounter any issues or have suggestions for improvements, please create an issue in the repository.
+
+## License
+
+The Data Tracker app is released under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Credits
+
+The Data Tracker app is developed by FatemeZahra Bakhshandeh, and Arshia Ariannejad.
