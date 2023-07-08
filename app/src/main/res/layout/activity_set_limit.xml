@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="@dimen/size_4xs"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/surface">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layoutDirection="ltr">
+
+                    <TextView
+                        android:id="@+id/titleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="@dimen/size_l"
+                        android:layout_marginEnd="@dimen/size_l"
+                        android:fontFamily="@font/iran_sans_regular"
+                        android:gravity="center_vertical|center"
+                        android:paddingStart="@dimen/size_s"
+                        android:paddingEnd="@dimen/size_s"
+                        android:text="تغییر محدودیت"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/text_xl"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/currentLimit"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_4xl"
+            android:text="مقدار فعلی محدودیت:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_4xl"
+            android:text="مقدار جدید مورد نظر را در باکس زیر وارد کنید:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/currentLimit" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingVertical="@dimen/size_2xl"
+            android:paddingHorizontal="@dimen/size_5xl"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@color/grey_200"
+            android:inputType="number"
+            android:fontFamily="@font/iran_sans_regular"
+            android:layout_marginTop="@dimen/default_margin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/editText"
+            android:text="MB"
+            app:layout_constraintTop_toTopOf="@id/editText"
+            app:layout_constraintBottom_toBottomOf="@id/editText"
+            android:layout_marginLeft="@dimen/size_xs"/>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/default_padding"
+            android:background="@color/purple_200"
+            android:text="ذخیره"
+            style="@style/text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="@dimen/size_xl"
+            android:textStyle="bold" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
