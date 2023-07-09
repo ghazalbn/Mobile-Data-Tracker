@@ -39,7 +39,12 @@ The goal of this project is to develop an Android app that empowers users to hav
 
 ## Screenshots
 
-screenshots
+![image](https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/586bfd7f-9ece-4783-be17-0056b6f7b7d9)
+![image](https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/e893b920-f56b-4df1-90fb-0998da1ef465)
+![image](https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/88d0f565-a9bf-4499-aead-8f3ac9f29481)
+![image](https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/764b608a-f898-4e5d-b972-ab4b1b89c739)
+![image](https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/fb3aa4f4-1ddb-4c26-888b-b54d1d1a8841)
+![image](https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/0765dac5-ce29-4ef8-b44a-27f656b58dc1)
 
 ## Installation
 
@@ -56,7 +61,7 @@ Upon launching the app, you will see the main screen with the following options:
 
 - **Data Usages**: This section displays your current daily data usage, including upload and download speeds.
 - **Monthly Data Usages**: This section shows a list of your data usage history for the past 30 days.
-- **Analize Data Usage**: Tap on the today's data usage to see your data analysis for the day.
+- **Analize Data Usage**: Tap on the exclamation mark next to today's data usage, to see your data analysis for the day.
 - **Set Limit**: Tap the upper left button to set your data usage limit for the day.
 - **Graph**: Tap the upper right button to view a graphical representation of your data usage.
 
