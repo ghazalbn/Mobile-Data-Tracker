@@ -1,6 +1,17 @@
 # Mobile-Data-Tracker App
 
-Data Tracker is an Android application that helps you monitor and track your mobile data usage and provides users with insights into their data usage patterns. With this app, you can set limits for your data usage, view your daily and monthly usage, View the graphical representation of your data usage pattern. and receive notifications when you reach your set limit.
+The Data Tracker app is an Android application that allows users to monitor and track their mobile network data usage. It provides insights into their data usage patterns and enables them to set usage limits to manage their data consumption effectively.
+
+## Project Description
+
+The goal of this project is to develop an Android app that empowers users to have a comprehensive understanding of their data usage habits and make informed decisions about their mobile data consumption. The app will offer the following features:
+
+1. **Current Data Usage**: Users can connect to their mobile network and view their real-time data usage. The app will capture data usage information from the network provider and present it in a user-friendly format.
+
+2. **Data Usage Patterns**: The app will provide graphical representations of users' data usage patterns over time. This feature allows users to identify trends, peak usage periods, and potential areas for data optimization.
+
+3. **Usage Limits**: Users can set their desired data usage limits within the app. The application will notify users when they are approaching or exceeding their predefined limits, helping them stay within their data plan constraints.
+
 
 ## Features
 
@@ -10,6 +21,10 @@ Data Tracker is an Android application that helps you monitor and track your mob
 - Data usage history: View your data usage history for the past 30 days.
 - Graphical representation: Visualize your data usage with charts and graphs.
 - Analyze data consumation: compare the daily data consumption with the average data consumed in the last 30 days, providing users with insights into their usage habits.
+
+## Screenshots
+
+screenshots
 
 ## Installation
 
@@ -24,22 +39,31 @@ To use the Data Tracker app, follow these steps:
 
 Upon launching the app, you will see the main screen with the following options:
 
-- **Set Limit**: Tap the upper left button to set your data usage limit for the day.
-- **Graph**: Tap the upper right button to view a graphical representation of your data usage.
 - **Data Usages**: This section displays your current daily data usage, including upload and download speeds.
 - **Monthly Data Usages**: This section shows a list of your data usage history for the past 30 days.
 - **Analize Data Usage**: Tap on the today's data usage to see your data analysis for the day.
+- **Set Limit**: Tap the upper left button to set your data usage limit for the day.
+- **Graph**: Tap the upper right button to view a graphical representation of your data usage.
 
-## Screenshots
-
-screenshots
-
-## Libraries Used
+## Libraries and Dependencies
 
 The Data Tracker app utilizes the following libraries:
 
 - `dev.jahidhasanco.networkusage`: A library for tracking network usage statistics.
 - `com.github.PhilJay:MPAndroidChart`: A powerful charting library for Android.
+
+The Data Tracker app relies on the following dependencies:
+
+- `androidx.core:core-ktx:1.8.0`
+- `org.jetbrains.kotlin:kotlin-bom:1.8.0`
+- `androidx.lifecycle:lifecycle-runtime-ktx:2.3.1`
+- `androidx.appcompat:appcompat:1.6.1`
+- `androidx.constraintlayout:constraintlayout:2.1.4`
+- `junit:junit:4.13.2`
+- `androidx.test.ext:junit:1.1.5`
+- `androidx.test.espresso:espresso-core:3.5.1`
+- `com.github.JahidHasanCO:NetworkUsage:1.0.1`
+- `com.google.android.material:material:1.9`
 
 ## Permissions
 
@@ -53,22 +77,6 @@ The Data Tracker app requires the following permissions:
 - `android.permission.FOREGROUND_SERVICE`: Enables the app to run foreground services.
 - `android.permission.RECEIVE_BOOT_COMPLETED`: Grants the app the ability to receive the BOOT_COMPLETED broadcast after the device boots up.
 
-## Dependencies
-
-The Data Tracker app relies on the following dependencies:
-
-- androidx.core:core-ktx:1.8.0
-- org.jetbrains.kotlin:kotlin-bom:1.8.0
-- androidx.lifecycle:lifecycle-runtime-ktx:2.3.1
-- androidx.appcompat:appcompat:1.6.1
-- androidx.constraintlayout:constraintlayout:2.1.4
-- junit:junit:4.13.2
-- androidx.test.ext:junit:1.1.5
-- androidx.test.espresso:espresso-core:3.5.1
-- com.github.JahidHasanCO:NetworkUsage:1.0.1
-- com.google.android.material:material:1.9.0
-- com.github.PhilJay:MPAndroidChart:v3.1.0
-
 ## Implementation
 
 The Data Tracker app is implemented using Kotlin and follows the Model-View-ViewModel (MVVM) architecture. It utilizes various Android components and libraries, including:
@@ -81,7 +89,18 @@ The Data Tracker app is implemented using Kotlin and follows the Model-View-View
 
 The app makes use of a `NetworkMonitorService` to monitor internet usage in the background and a `ProfilePreferences` object to store and retrieve user preferences.
 
-## Project Structure
+### Implementation Steps
+
+1. **Android Studio and SDK**: The app will be built using Android Studio, utilizing the Android Software Development Kit (SDK). This development environment provides the necessary tools and resources for creating Android applications.
+
+2. **Data Capture**: The app will connect to the mobile network and capture data usage information from the network provider. This will involve leveraging relevant APIs provided by the network provider to retrieve accurate and up-to-date data usage details.
+
+3. **Data Analysis**: Once the data usage information is captured, the app will analyze the data to generate insights into usage patterns. This will involve applying data analytics techniques to identify trends, peak usage periods, and other relevant metrics. The insights will be presented to the user in a graphical format for better visualization.
+
+4. **Usage Limit Management**: Users will have the ability to set their desired data usage limits within the app. The app will provide a user-friendly interface to define the limit and configure notifications to alert users when they approach or exceed the specified threshold.
+
+
+### Project Structure
 
 The Data Tracker project follows the standard Android project structure. The main components and files include:
 
@@ -90,7 +109,7 @@ The Data Tracker project follows the standard Android project structure. The mai
 - `app/src/main/AndroidManifest.xml`: Specifies the app's package name, permissions, and activities.
 - `app/build.gradle`: Includes the app-level dependencies and configuration.
 
-## Important Files and Components
+### Important Files and Components
 
 The project consists of the following key files:
 
