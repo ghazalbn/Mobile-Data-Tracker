@@ -11,6 +11,8 @@ The Data Tracker app is an Android application that allows users to monitor and 
 - [Libraries and Dependencies](#libraries-and-dependencies)
 - [Permissions](#permissions)
 - [Implementation](#implementation)
+    - [Project Structure](#project-structure)
+    - [Important Files and Components](#important-files-and-components)
 - [Contributing](#contributing)
 - [License](#license)
 - [Credits](#credits)
