@@ -2,6 +2,19 @@
 
 The Data Tracker app is an Android application that allows users to monitor and track their mobile network data usage. It provides insights into their data usage patterns and enables them to set usage limits to manage their data consumption effectively.
 
+## Table of Contents
+- [Project Description](#project-description)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Libraries and Dependencies](#libraries-and-dependencies)
+- [Permissions](#permissions)
+- [Implementation](#implementation)
+- [Contributing](#contributing)
+- [License](#license)
+- [Credits](#credits)
+
 ## Project Description
 
 The goal of this project is to develop an Android app that empowers users to have a comprehensive understanding of their data usage habits and make informed decisions about their mobile data consumption. The app will offer the following features:
@@ -91,14 +104,13 @@ The app makes use of a `NetworkMonitorService` to monitor internet usage in the 
 
 ### Implementation Steps
 
-1. **Android Studio and SDK**: The app will be built using Android Studio, utilizing the Android Software Development Kit (SDK). This development environment provides the necessary tools and resources for creating Android applications.
+1. **Android Studio and SDK**: The app was built using Android Studio, utilizing the Android Software Development Kit (SDK). This development environment provided the necessary tools and resources for creating Android applications.
 
-2. **Data Capture**: The app will connect to the mobile network and capture data usage information from the network provider. This will involve leveraging relevant APIs provided by the network provider to retrieve accurate and up-to-date data usage details.
+2. **Data Capture**: The app connected to the mobile network and captured data usage information from the network provider. This involved leveraging relevant APIs provided by the network provider to retrieve accurate and up-to-date data usage details.
 
-3. **Data Analysis**: Once the data usage information is captured, the app will analyze the data to generate insights into usage patterns. This will involve applying data analytics techniques to identify trends, peak usage periods, and other relevant metrics. The insights will be presented to the user in a graphical format for better visualization.
+3. **Data Analysis**: Once the data usage information was captured, the app analyzed the data to generate insights into usage patterns. This involved applying data analytics techniques to identify trends, peak usage periods, and other relevant metrics. The insights were presented to the user in a graphical format for better visualization.
 
-4. **Usage Limit Management**: Users will have the ability to set their desired data usage limits within the app. The app will provide a user-friendly interface to define the limit and configure notifications to alert users when they approach or exceed the specified threshold.
-
+4. **Usage Limit Management**: Users had the ability to set their desired data usage limits within the app. The app provided a user-friendly interface to define the limit and configured notifications to alert users when they approached or exceeded the specified threshold.
 
 ### Project Structure
 
