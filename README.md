@@ -11,6 +11,7 @@ This app enables users to monitor their real-time data usage, visualize data usa
 - [Libraries and Dependencies](#libraries-and-dependencies)
 - [Permissions](#permissions)
 - [Implementation](#implementation)
+    - [Implementation Steps](#implementation-steps)
     - [Project Structure](#project-structure)
     - [Important Files and Components](#important-files-and-components)
 - [Contributing](#contributing)
