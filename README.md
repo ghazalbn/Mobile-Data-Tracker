@@ -41,7 +41,8 @@ This app enables users to monitor their real-time data usage, visualize data usa
 </div>
 <div style="display:flex; justify-content:center;" margin-top: 100px;">  
   <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/fb3aa4f4-1ddb-4c26-888b-b54d1d1a8841" alt="Screenshot 7" width="250" style="margin-right: 200px;"/>
-  <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/764b608a-f898-4e5d-b972-ab4b1b89c739" alt="Screenshot 8" width="250"/>
+  <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/764b608a-f898-4e5d-b972-ab4b1b89c739" alt="Screenshot 8" width="250" style="margin-right: 200px;"/>
+  <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/45b14846-13e6-4229-9d25-48217ea8bfff" alt="Screenshot 8" width="250"/>
 </div>
 
 ## Installation
