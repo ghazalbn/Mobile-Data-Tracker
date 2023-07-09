@@ -39,12 +39,12 @@ The goal of this project is to develop an Android app that empowers users to hav
 
 ## Screenshots
 
-<div style="display:flex; justify-content:center;">
+<div style="display:flex; justify-content:center;" width="300">
   <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/586bfd7f-9ece-4783-be17-0056b6f7b7d9" alt="Screenshot 1" width="400"/>
   <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/e893b920-f56b-4df1-90fb-0998da1ef465" alt="Screenshot 2" width="400"/>
   <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/88d0f565-a9bf-4499-aead-8f3ac9f29481" alt="Screenshot 1" width="400"/>
 </div>
-<div style="display:flex; justify-content:center;">  
+<div style="display:flex; justify-content:center;" width="300">  
   <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/764b608a-f898-4e5d-b972-ab4b1b89c739" alt="Screenshot 2" width="400"/>
   <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/fb3aa4f4-1ddb-4c26-888b-b54d1d1a8841" alt="Screenshot 1" width="400"/>
   <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/0765dac5-ce29-4ef8-b44a-27f656b58dc1" alt="Screenshot 2" width="400"/>
