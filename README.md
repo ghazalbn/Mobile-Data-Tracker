@@ -1,9 +1,9 @@
 # Mobile-Data-Tracker App
 
 The Data Tracker app is an Android application that allows users to monitor and track their mobile network data usage. It provides insights into their data usage patterns and enables them to set usage limits to manage their data consumption effectively.
+This app enables users to monitor their real-time data usage, visualize data usage patterns, and set usage limits. It captures data usage information from the network provider and presents it in a user-friendly format. By providing graphical representations of usage patterns, users can identify trends and optimize their data consumption. The app also notifies users when they approach or exceed their set limits, ensuring they stay within their data plan constraints.
 
 ## Table of Contents
-- [Project Description](#project-description)
 - [Features](#features)
 - [Screenshots](#screenshots)
 - [Installation](#installation)
@@ -11,35 +11,39 @@ The Data Tracker app is an Android application that allows users to monitor and 
 - [Libraries and Dependencies](#libraries-and-dependencies)
 - [Permissions](#permissions)
 - [Implementation](#implementation)
+    - [Implementation Steps](#implementation-steps)
     - [Project Structure](#project-structure)
     - [Important Files and Components](#important-files-and-components)
 - [Contributing](#contributing)
 - [License](#license)
 - [Credits](#credits)
 
-## Project Description
-
-The goal of this project is to develop an Android app that empowers users to have a comprehensive understanding of their data usage habits and make informed decisions about their mobile data consumption. The app will offer the following features:
-
-1. **Current Data Usage**: Users can connect to their mobile network and view their real-time data usage. The app will capture data usage information from the network provider and present it in a user-friendly format.
-
-2. **Data Usage Patterns**: The app will provide graphical representations of users' data usage patterns over time. This feature allows users to identify trends, peak usage periods, and potential areas for data optimization.
-
-3. **Usage Limits**: Users can set their desired data usage limits within the app. The application will notify users when they are approaching or exceeding their predefined limits, helping them stay within their data plan constraints.
-
-
 ## Features
 
-- Usage tracking: Monitor and track your daily and monthly mobile data usage.
-- Set data usage limit: Set a limit for your daily mobile data usage.
-- Notifications: Receive notifications when you reach your set data usage limit.
-- Data usage history: View your data usage history for the past 30 days.
-- Graphical representation: Visualize your data usage with charts and graphs.
-- Analyze data consumation: compare the daily data consumption with the average data consumed in the last 30 days, providing users with insights into their usage habits.
+- **Usage tracking**: Monitor and track your daily and monthly mobile data usage.
+- **Set data usage limit**: Set a limit for your daily mobile data usage.
+- **Notifications**: Receive notifications when you reach your set data usage limit.
+- **Data usage history**: View your data usage history for the past 30 days.
+- **Graphical representation**: Visualize your data usage with charts and graphs.
+- **Analyze data consumation**: compare the daily data consumption with the average data consumed in the last 30 days, providing users with insights into their usage habits.
 
 ## Screenshots
 
-screenshots
+<div style="display:flex; justify-content:center;">
+  <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/586bfd7f-9ece-4783-be17-0056b6f7b7d9" alt="Screenshot 1" width="250" style="margin-right: 200px;"/>
+  <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/7f860175-9108-456c-86f3-2839f97f018f" alt="Screenshot 2" width="250" style="margin-right: 200px;"/>
+  <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/e893b920-f56b-4df1-90fb-0998da1ef465" alt="Screenshot 3" width="231" />
+</div>
+<div style="display:flex; justify-content:center;" margin-top: 100px;">  
+  <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/88d0f565-a9bf-4499-aead-8f3ac9f29481" alt="Screenshot 4" width="250" style="margin-right: 200px;"/>
+  <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/49ece551-c9b4-4570-af2e-9b74d3a6ba56" alt="Screenshot 5" width="250" style="margin-right: 200px;"/>
+  <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/0765dac5-ce29-4ef8-b44a-27f656b58dc1" alt="Screenshot 6" width="250" />
+</div>
+<div style="display:flex; justify-content:center;" margin-top: 100px;">  
+  <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/fb3aa4f4-1ddb-4c26-888b-b54d1d1a8841" alt="Screenshot 7" width="250" style="margin-right: 200px;"/>
+  <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/764b608a-f898-4e5d-b972-ab4b1b89c739" alt="Screenshot 8" width="250" style="margin-right: 200px;"/>
+  <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/45b14846-13e6-4229-9d25-48217ea8bfff" alt="Screenshot 8" width="250"/>
+</div>
 
 ## Installation
 
@@ -56,7 +60,7 @@ Upon launching the app, you will see the main screen with the following options:
 
 - **Data Usages**: This section displays your current daily data usage, including upload and download speeds.
 - **Monthly Data Usages**: This section shows a list of your data usage history for the past 30 days.
-- **Analize Data Usage**: Tap on the today's data usage to see your data analysis for the day.
+- **Analize Data Usage**: Tap on the exclamation mark next to today's data usage, to see your data analysis for the day.
 - **Set Limit**: Tap the upper left button to set your data usage limit for the day.
 - **Graph**: Tap the upper right button to view a graphical representation of your data usage.
 
