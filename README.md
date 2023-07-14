@@ -30,19 +30,19 @@ This app enables users to monitor their real-time data usage, visualize data usa
 ## Screenshots
 
 <div style="display:flex; justify-content:center;">
-  <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/586bfd7f-9ece-4783-be17-0056b6f7b7d9" alt="Screenshot 1" width="250" style="margin-right: 200px;"/>
-  <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/7f860175-9108-456c-86f3-2839f97f018f" alt="Screenshot 2" width="250" style="margin-right: 200px;"/>
-  <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/e893b920-f56b-4df1-90fb-0998da1ef465" alt="Screenshot 3" width="231" />
+  <img src="assets/screenshot1.png" alt="Screenshot 1" width="250" style="margin-right: 200px;"/>
+  <img src="assets/screenshot2.png" alt="Screenshot 2" width="250" style="margin-right: 200px;"/>
+  <img src="assets/screenshot3.png" alt="Screenshot 3" width="231" />
 </div>
 <div style="display:flex; justify-content:center;" margin-top: 100px;">  
-  <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/88d0f565-a9bf-4499-aead-8f3ac9f29481" alt="Screenshot 4" width="250" style="margin-right: 200px;"/>
-  <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/49ece551-c9b4-4570-af2e-9b74d3a6ba56" alt="Screenshot 5" width="250" style="margin-right: 200px;"/>
-  <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/0765dac5-ce29-4ef8-b44a-27f656b58dc1" alt="Screenshot 6" width="250" />
+  <img src="assets/screenshot4.png" alt="Screenshot 4" width="250" style="margin-right: 200px;"/>
+  <img src="assets/screenshot5.png" alt="Screenshot 5" width="250" style="margin-right: 200px;"/>
+  <img src="assets/screenshot6.png" alt="Screenshot 6" width="250" />
 </div>
 <div style="display:flex; justify-content:center;" margin-top: 100px;">  
-  <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/fb3aa4f4-1ddb-4c26-888b-b54d1d1a8841" alt="Screenshot 7" width="250" style="margin-right: 200px;"/>
-  <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/764b608a-f898-4e5d-b972-ab4b1b89c739" alt="Screenshot 8" width="250" style="margin-right: 200px;"/>
-  <img src="https://github.com/ghazalbn/Mobile-Data-Tracker/assets/56255992/45b14846-13e6-4229-9d25-48217ea8bfff" alt="Screenshot 8" width="250"/>
+  <img src="assets/screenshot7.png" alt="Screenshot 7" width="250" style="margin-right: 200px;"/>
+  <img src="assets/screenshot8.png" alt="Screenshot 8" width="250" style="margin-right: 200px;"/>
+  <img src="assets/screenshot9.png" alt="Screenshot 8" width="250"/>
 </div>
 
 ## Installation
